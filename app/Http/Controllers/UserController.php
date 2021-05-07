@@ -22,10 +22,9 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Request $request)
+    public function create()
     {
-        User::create($request->all());
-        return redirect('users.index', 201);
+        return view('client.form');
     }
 
     /**
