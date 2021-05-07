@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::namespace('App\Http\Controllers')->group(function() {
     Route::resource('/user', 'UserController');
 });
+
+Route::get('/', function() {
+    return view('app');
+});
