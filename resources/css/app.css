@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.link-padding {
+    @apply font-semibold pl-4 pr-4 text-lg capitalize;
+}

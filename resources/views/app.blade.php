@@ -10,15 +10,15 @@
 </head>
 <body>
     <header>
-        <nav class="flex flex-row">
-            <div class="logo">
-                Helpus
+        <nav class="flex flex-row bg-green-700 p-2 justify-center items-center text-white">
+            <div class="logo-box flex flex-grow">
+                <p class="font-bold text-2xl">Helpus</p>
             </div>
-            <div class="nav-links">
+            <div class="nav-links ml-6 flex-grow">
                 <ul>
-                    <li><a href="route('')">link1</a></li>
-                    <li><a href="">link2</a></li>
-                    <li><a href="">link3</a></li>
+                    <li class="inline-block link-padding"><a href="route('')">link1</a></li>
+                    <li class="inline-block link-padding"><a href="">link2</a></li>
+                    <li class="inline-block link-padding"><a href="">link3</a></li>
                 </ul>
             </div>
             <div class="user-box flex flex-row">
@@ -29,10 +29,14 @@
         </nav>
     </header>
 
-    @yield('content')
+    <!-- the actual content -->
+    <section>
+        @yield('content')
+    </section>
+    <!-- end of the content -->
 
     <div class="footer container mx-auto">
-        <p class="text-center">Creer avec <i class="fas fa-heart"></i> par <a href="https://github.com/b3rking" target="_blank">b3rking</a> et Arsene, <span class="year"></span></p>
+        <p class="text-center">Creer avec <i class="fas fa-heart text-red-600 animate-bounce"></i> par <a href="https://github.com/b3rking" target="_blank">b3rking</a> et Arsene, <span class="year"></span></p>
     </div>
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
