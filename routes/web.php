@@ -18,6 +18,4 @@ Route::namespace('App\Http\Controllers')->group(function() {
     Route::resource('/user', 'UserController');
 });
 
-Route::get('/', function() {
-    return view('app');
-});
+Route::get('/', ['App\Http\Controllers\MainController', 'index']);
