@@ -5,3 +5,15 @@
 .link-padding {
     @apply font-semibold pl-4 pr-4 text-lg capitalize;
 }
+
+.icon-style {
+    @apply text-gray-600 text-xl;
+}
+
+.box {
+    @apply bg-gray-100 rounded-sm px-1 m-3 flex items-center;
+}
+
+.input {
+    @apply px-2 focus:outline-none bg-transparent py-2;
+}
