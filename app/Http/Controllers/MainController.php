@@ -19,4 +19,8 @@ class MainController extends Controller
     public function login() {
         return view('admin.login');
     }
+
+    public function about() {
+        return view('client.about');
+    }
 }

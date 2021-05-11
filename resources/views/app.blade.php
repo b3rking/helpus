@@ -25,7 +25,7 @@
             <div class="nav-links ml-6 flex-grow sm:hidden">
                 <ul>
                     <li class="inline-block link-padding p-1 rounded-lg hover:bg-green-800"><a href="{{ route('home') }}">Home</a></li>
-                    <li class="inline-block link-padding p-1 rounded-lg hover:bg-green-800"><a href="{{ route('home') }}">About</a></li>
+                    <li class="inline-block link-padding p-1 rounded-lg hover:bg-green-800"><a href="{{ route('about') }}">About</a></li>
                     @auth
                         <li class="inline-block link-padding p-1 rounded-lg hover:bg-green-800"><a href="{{ route('home') }}">Admin</a></li>
                     @endauth
