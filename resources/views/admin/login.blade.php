@@ -27,7 +27,6 @@
             <div class="flex items-center justify-center mb-4">
                 <button type="submit" class="bg-green-600 py-1 px-4 text-white text-lg capitalize w-60 rounded-lg">s'identifiez...</button>
             </div>
-
         </form>
     </div>
 @stop
