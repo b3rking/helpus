@@ -13,6 +13,6 @@ Route::get('/login', ['App\Http\Controllers\MainController', 'login'])->name('lo
 
 Route::get('/about', ['App\Http\Controllers\MainController', 'about'])->name('about');
 
-Route::post('/register', ['App\Http\Controllers\MainController', 'register'])->name('register');
+Route::post('/register', ['App\Http\Controllers\AuthController', 'register'])->name('register');
 
 Route::get('/attempt', ['App\Http\Controllers\AuthController', 'authenticate']);

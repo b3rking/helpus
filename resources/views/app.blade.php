@@ -12,7 +12,7 @@
     <link rel="shortcut icon" type="image/png" href="{{ asset('favicons/favicon.ico') }}">
     <link rel="mask-icon" href="{{ asset('favicons/safari-pinned-tab.svg') }}" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="#047857">
     <script src="https://kit.fontawesome.com/29e3c799c5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
