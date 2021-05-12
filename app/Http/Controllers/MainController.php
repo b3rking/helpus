@@ -23,4 +23,8 @@ class MainController extends Controller
     public function about() {
         return view('client.about');
     }
+
+    public function dashboard() {
+        return view('admin.dashboard');
+    }
 }
