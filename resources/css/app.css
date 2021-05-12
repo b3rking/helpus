@@ -11,5 +11,5 @@
 }
 
 .box {
-    @apply bg-gray-100 rounded-sm px-1 m-3 flex items-center;
+    @apply rounded-sm px-1 m-3 flex items-center;
 }

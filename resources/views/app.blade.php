@@ -12,7 +12,7 @@
     <link rel="shortcut icon" type="image/png" href="favicons/favicon.ico">
     <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#000000">
     <script src="https://kit.fontawesome.com/29e3c799c5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
@@ -22,7 +22,7 @@
             <div class="logo-box flex flex-grow">
                 <p class="font-bold text-2xl"><a href="{{ route('home') }}">Helpus</a></p>
             </div>
-            <div class="nav-links ml-6 flex-grow sm:hidden">
+            <div class="nav-links ml-6 flex-grow">
                 <ul>
                     <li class="inline-block link-padding p-1 rounded-lg hover:bg-green-800"><a href="{{ route('home') }}">Home</a></li>
                     <li class="inline-block link-padding p-1 rounded-lg hover:bg-green-800"><a href="{{ route('about') }}">About</a></li>
@@ -52,7 +52,7 @@
     <!-- end of the content -->
 
     <div class="footer m-10 container mx-auto">
-        <p class="text-center">Creer avec <i class="fas fa-heart text-red-600 animate-bounce"></i> par <a href="https://github.com/b3rking" target="_blank">b3rking</a> et Arsene, <span class="year"></span></p>
+        <p class="text-center">Creer avec <i class="fas fa-heart text-red-600 animate-bounce"></i> par <a href="https://github.com/b3rking" target="_blank" class="text-blue-900">b3rking</a> et Arsene, <span class="year"></span></p>
     </div>
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
