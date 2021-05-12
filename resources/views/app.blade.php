@@ -24,13 +24,13 @@
             </div>
             <div class="nav-links ml-6 flex-grow">
                 <ul>
-                    <li class="inline-block link-padding p-1 rounded-lg hover:bg-green-800"><a href="{{ route('home') }}">Home</a></li>
-                    <li class="inline-block link-padding p-1 rounded-lg hover:bg-green-800"><a href="{{ route('about') }}">About</a></li>
+                    <li class="inline-block link-padding p-1 rounded-lg hover:bg-green-800"><a href="{{ route('home') }}">Accueil</a></li>
+                    <li class="inline-block link-padding p-1 rounded-lg hover:bg-green-800"><a href="{{ route('about') }}">A propos</a></li>
                     @auth
                         <li class="inline-block link-padding p-1 rounded-lg hover:bg-green-800"><a href="{{ route('home') }}">Admin</a></li>
                     @endauth
                     @guest
-                        <li class="inline-block link-padding p-1 rounded-lg hover:bg-green-800"><a href="{{ route('login') }}">Login</a></li>
+                        <li class="inline-block link-padding p-1 rounded-lg hover:bg-green-800"><a href="{{ route('login') }}">se connecter</a></li>
                     @endguest
 
                 </ul>
