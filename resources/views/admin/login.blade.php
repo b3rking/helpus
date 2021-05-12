@@ -3,7 +3,7 @@
 @section('content')
     <div class="bg-blue-200 w-11/12 rounded-lg p-2 m-2 mb-4 mx-auto text-blue-900 ">cette page est reservé aux administrateur du site. pour les visiteur <a href="{{ route('home') }}" class="text-lg text-gray-900">cliquer ici</a></div>
     @if ($errors->any())
-            <div class="bg-red-200 text-red-900 text-lg w-11/12 rounded-lg px-1 mb-4 mx-auto">
+            <div class="bg-red-200 text-red-900 text-md w-11/12 rounded-lg px-2 py-3 mb-4 mx-auto">
             <ul>
                 @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>

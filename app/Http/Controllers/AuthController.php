@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Illuminate\Hashing\BcryptHasher;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -35,10 +36,17 @@ class AuthController extends Controller
             'password' => 'required|confirmed|min:5|max:20'
         ]);
 
-        $user->create($request->all());
+        if ($validated) {
+            $credentials = $request;
+            $credentials->password = bcrypt($request->password);
 
-        Auth::login($user);
+            $user::create($credentials->all());
 
-        return redirect('dashboard');
+            Auth::login($user);
+
+            return redirect('dashboard');
+        }
+
+
     }
 }

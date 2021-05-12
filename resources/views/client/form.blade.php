@@ -2,7 +2,7 @@
 @section('title', "Nouveau Admin")
 @section('content')
 @if ($errors->any())
-    <div class="bg-red-200 text-red-900 text-lg w-11/12 rounded-lg px-1 mb-4 mt-4 mx-auto">
+    <div class="bg-red-200 text-red-900 text-md py-3 w-11/12 rounded-lg px-1 mb-4 mt-4 mx-auto">
         <ul>
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
