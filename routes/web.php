@@ -16,3 +16,5 @@ Route::get('/about', ['App\Http\Controllers\MainController', 'about'])->name('ab
 Route::post('/register', ['App\Http\Controllers\AuthController', 'register'])->name('register');
 
 Route::get('/attempt', ['App\Http\Controllers\AuthController', 'authenticate']);
+
+Route::get('/dashboard', ['App\Http\Controllers\MainController', 'dashboard'])->name('dashboard');
