@@ -17,7 +17,6 @@ Route::post('/register', ['App\Http\Controllers\AuthController', 'register'])->n
 
 Route::get('/attempt', ['App\Http\Controllers\AuthController', 'authenticate']);
 
-Route::get('/dashboard', ['App\Http\Controllers\MainController', 'dashboard'])->name('dashboard');
 
 Route::get('/logout', ['App\Http\Controllers\AuthController', 'logout'])->name('logout');
 
@@ -26,4 +25,10 @@ Route::get('/logout', ['App\Http\Controllers\AuthController', 'logout'])->name('
 Route::get('/add_user', ['App\Http\Controllers\MainController', 'create'])->name('create');
 
 
-/// other routes!
+/// admin and all protected routes!
+
+Route::middleware('auth')->group(function() {
+    Route::get('/dashboard', ['App\Http\Controllers\MainController', 'dashboard'])->name('dashboard');
+
+    
+});
