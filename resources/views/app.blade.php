@@ -52,7 +52,7 @@
     <!-- end of the content -->
 
     <div class="footer m-10 container mx-auto">
-        <p class="text-center">Creer avec <i class="fas fa-heart text-red-600 animate-bounce"></i> par <a href="https://github.com/b3rking" target="_blank" class="text-blue-900">b3rking</a> et Arsene, <span class="year"></span></p>
+        <p class="text-center">Creer avec <i class="fas fa-heart text-red-600 animate-bounce"></i> par <a href="https://github.com/b3rking" target="_blank" class="text-blue-900">b3rking</a> <span class="year"></span></p>
     </div>
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
