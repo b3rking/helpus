@@ -27,7 +27,7 @@
                     <li class="inline-block link-padding p-1 rounded-lg hover:bg-green-800"><a href="{{ route('home') }}">Accueil</a></li>
                     <li class="inline-block link-padding p-1 rounded-lg hover:bg-green-800"><a href="{{ route('about') }}">A propos</a></li>
                     @auth
-                        <li class="inline-block link-padding p-1 rounded-lg hover:bg-green-800"><a href="{{ route('home') }}">Admin</a></li>
+                        <li class="inline-block link-padding p-1 rounded-lg hover:bg-green-800"><a href="{{ route('dashboard') }}">Admin</a></li>
                     @endauth
                     @guest
                         <li class="inline-block link-padding p-1 rounded-lg hover:bg-green-800"><a href="{{ route('login') }}">se connecter</a></li>
@@ -35,13 +35,15 @@
 
                 </ul>
             </div>
+            @auth
             <div class="user-box flex flex-row items-center">
                 <img src="{{ asset('images/pngtree-user-vector-avatar-png-image_1541962.jpg') }}" alt="user profile-image" class="rounded-full w-10 h-10 flex items-center justify-center">
                 <div class="flex flex-col px-3">
-                    <p class="font-medium capitalize">Username</p>
+                    <p class="font-medium capitalize">{{ $user->username }}</p>
                     <a href="/logout">Se deconnecter</a>
                 </div>
             </div>
+            @endauth
         </nav>
     </header>
 

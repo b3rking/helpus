@@ -18,3 +18,12 @@ Route::post('/register', ['App\Http\Controllers\AuthController', 'register'])->n
 Route::get('/attempt', ['App\Http\Controllers\AuthController', 'authenticate']);
 
 Route::get('/dashboard', ['App\Http\Controllers\MainController', 'dashboard'])->name('dashboard');
+
+Route::get('/logout', ['App\Http\Controllers\AuthController', 'logout'])->name('logout');
+
+//// route to create admin!
+
+Route::get('/add_user', ['App\Http\Controllers\MainController', 'create'])->name('create');
+
+
+/// other routes!

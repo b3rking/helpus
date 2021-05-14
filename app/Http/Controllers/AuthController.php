@@ -23,7 +23,7 @@ class AuthController extends Controller
         if(Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            return redirect('home');
+            return redirect('dashboard');
         } else {
             return back()->withErrors([
                 'error' => 'desolé, je vous reconnais pas!. reesayez :D'
@@ -33,6 +33,7 @@ class AuthController extends Controller
 
     public function register(Request $request) {
         $user = new User();
+
         $validated = $request->validate([
             'fullname' => 'required|max:250',
             'username' => 'required|unique:users|min:5|max:20',
@@ -46,9 +47,27 @@ class AuthController extends Controller
 
             $user::create($credentials);
 
-            Auth::login($user);
+            if(Auth::attempt(['username' => $request['username'], 'password' => $request['password']])) {
+                $request->session()->regenerate();
 
-            return redirect('dashboard');
+                return redirect('dashboard');
+            }
+
+            /* Auth::login($user);
+
+            return redirect('dashboard'); */
         }
+
+
+    }
+
+    public function logout(Request $request) {
+        Auth::logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return redirect('/');
     }
 }
