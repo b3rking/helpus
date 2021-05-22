@@ -52,13 +52,7 @@ class AuthController extends Controller
 
                 return redirect('dashboard');
             }
-
-            /* Auth::login($user);
-
-            return redirect('dashboard'); */
         }
-
-
     }
 
     public function logout(Request $request) {
