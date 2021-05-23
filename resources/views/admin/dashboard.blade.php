@@ -12,6 +12,7 @@
         </div>
         <div class="bg-red-500 h-auto w-11/12 main">
             <h2 class="text-lg font-bold capitalize underline">bienvenue {{ $user->username }}</h2>
+            <div class="bg-yellow-500 h-8 w-8"></div>
         </div>
     </div>
 @stop
