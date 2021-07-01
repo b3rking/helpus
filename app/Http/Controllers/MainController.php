@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Patient;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
@@ -12,7 +13,9 @@ class MainController extends Controller
      * home page function!
      */
     public function index(Request $request) {
-        return view('client.home')->with('user', $request->user());
+        return view('client.home')
+                ->with('user', $request->user())
+                ->with('patients', Patient::orderBy('created_at', 'desc')->get());
     }
 
     public function login(Request $request) {
