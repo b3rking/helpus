@@ -14,17 +14,18 @@ class PatientController extends Controller
      */
     public function index()
     {
-        
+        return back();
     }
 
     /**
      * Show the form for creating a new resource.
      *
+     * @param Request $request
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        return view('admin.add')->with('user', $request->user());
     }
 
     /**

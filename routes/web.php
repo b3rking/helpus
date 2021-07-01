@@ -3,10 +3,6 @@
 use Illuminate\Support\Facades\Route;
 
 
-Route::namespace('App\Http\Controllers')->group(function() {
-    Route::resource('/user', 'UserController');
-});
-
 Route::get('/', ['App\Http\Controllers\MainController', 'index'])->name('home');
 
 Route::get('/login', ['App\Http\Controllers\MainController', 'login'])->name('login');
@@ -29,6 +25,8 @@ Route::get('/add_user', ['App\Http\Controllers\MainController', 'create'])->name
 
 Route::middleware('auth')->group(function() {
     Route::get('/dashboard', ['App\Http\Controllers\MainController', 'dashboard'])->name('dashboard');
+});
 
-    
+Route::middleware('auth')->group(function() {
+    Route::resource('patient', 'App\Http\Controllers\PatientController');
 });
