@@ -15,6 +15,18 @@ class CreatePatientsTable extends Migration
     {
         Schema::create('patients', function (Blueprint $table) {
             $table->id();
+            $table->string('nom&prenom', 150);
+            $table->string('adress', 100);
+            $table->integer('tel');
+            $table->string('story');
+            $table->integer('etat_id');
+            $table->string('ecocash_name', 100)->nullable();
+            $table->integer('ecocash_number')->nullable();
+            $table->string('lumicash_name', 100)->nullable();
+            $table->integer('lumicash_number')->nullable();
+            $table->string('bank_name', 100)->nullable();
+            $table->integer('bank_number')->nullable();
+            $table->string('pic_path');
             $table->timestamps();
         });
     }

@@ -15,5 +15,5 @@
 }
 
 .admin-link {
-    @apply capitalize py-2 text-md font-semibold hover:bg-gray-300 rounded-lg
+    @apply capitalize py-2 text-md font-bold rounded-lg hover:bg-gray-300
 }
