@@ -20,7 +20,11 @@
                         <th>tel</th>
                     </thead>
                     <tbody>
-                        <tr></tr>
+                        <tr>
+                            <td>ISHIMWE Eschyle Bersy</td>
+                            <td>kanyosha, 8av n°45</td>
+                            <td>78569321</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
