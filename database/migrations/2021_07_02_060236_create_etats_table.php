@@ -15,6 +15,7 @@ class CreateEtatsTable extends Migration
     {
         Schema::create('etats', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
             $table->timestamps();
         });
     }
