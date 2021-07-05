@@ -18,10 +18,10 @@
                     <input type="text" name="adress" class="border-2 border-gray-700 rounded-md w-1/5 p-1">
                 </label>
             </div>
-            <div class="my-4">
+            <div class="my-4" id="editor">
                 <label for="story">
-                    <p class="font-semibold capitalize">histoire</p>
-                    <textarea name="story" class="border-2 border-gray-700 rounded-md w-1/5 p-1"></textarea>
+                    <p class="font-semibold capitalize">ecrit son histoire ici</p>
+                    <textarea name="story" id="editor" class="border-2 border-gray-700 rounded-md w-1/5 p-1"></textarea>
                 </label>
             </div>
             <div class="my-4">
@@ -35,7 +35,7 @@
                     <p class="font-semibold capitalize">etat</p>
                     <select>
                         @foreach ($etats as $et)
-                            <option value="">{{ $et->name }}</option>
+                            <option value="{{ $et->name }}">{{ $et->name }}</option>
                         @endforeach
                     </select>
                 </label>
