@@ -32,7 +32,7 @@
     <script src="https://kit.fontawesome.com/29e3c799c5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
-<body class="text-gray-700 overflow-hidden">
+<body class="text-gray-700">
     <header>
         <nav class="flex flex-row bg-green-700 p-2 justify-center items-center text-white">
             <div class="logo-box flex flex-grow">

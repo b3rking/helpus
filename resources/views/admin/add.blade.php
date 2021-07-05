@@ -2,9 +2,10 @@
 @section('title', "Page d'administration")
 @section('content')
     <h1 class="capitalize text-xl font-semibold text-center text-gray-500 my-4">ajouter un nouveau patient</h1>
-    <div class="">
+    
         <form action="" method="post" class="w-11/12 mx-auto">
             @csrf
+            <div class="bg-blue-100 w-11/12 rounded-lg p-2 m-2 mb-4 mx-auto text-blue-900 "><i class="fas fa-exclamation-circle text-xl px-2"></i>les suivi d'un asterisque peuvent etre laisser vide.</div>
             <div class="my-4">
                 <label for="nom&prenom">
                     <p class="font-semibold capitalize">nom et prenom</p>
@@ -39,37 +40,37 @@
             </div>
             <div class="my-4">
                 <label for="ecocash_name">
-                    <p>nom ecocash</p>
+                    <p>nom ecocash *</p>
                     <input type="text" name="ecocash_name">
                 </label>
             </div>
             <div class="my-4">
                 <label for="ecocash_number">
-                    <p>numero ecocash</p>
+                    <p>numero ecocash *</p>
                     <input type="number" name="ecocash_number">
                 </label>
             </div>
             <div class="my-4">
                 <label for="lumicash_name">
-                    <p>nom lumicash</p>
+                    <p>nom lumicash *</p>
                     <input type="text" name="lumicash_name">
                 </label>
             </div>
             <div class="my-4">
                 <label for="lumicash_number">
-                    <p>numero lumicash</p>
+                    <p>numero lumicash *</p>
                     <input type="number" name="lumicash_number">
                 </label>
             </div>
             <div class="my-4">
                 <label for="bank_name">
-                    <p>nom de la bank</p>
+                    <p>nom de la bank *</p>
                     <input type="text" name="bank_name">
                 </label>
             </div>
             <div class="my-4">
                 <label for="bank_number">
-                    <p>numero du compte</p>
+                    <p>numero du compte *</p>
                     <input type="number" name="bank_number">
                 </label>
             </div>
