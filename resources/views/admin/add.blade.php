@@ -5,7 +5,7 @@
     
         <form action="" method="post" class="w-11/12 mx-auto">
             @csrf
-            <div class="bg-blue-100 w-11/12 rounded-lg p-2 m-2 mb-4 mx-auto text-blue-900 "><i class="fas fa-exclamation-circle text-xl px-2"></i>les suivi d'un asterisque peuvent etre laisser vide.</div>
+            <div class="bg-blue-100 w-11/12 rounded-lg p-2 m-2 mb-4 mx-auto text-blue-900 "><i class="fas fa-exclamation-circle text-xl px-2"></i>les champs suivi d'un asterisque peuvent etre laisser vide.</div>
             <div class="my-4">
                 <label for="nom&prenom">
                     <p class="font-semibold capitalize">nom et prenom</p>
