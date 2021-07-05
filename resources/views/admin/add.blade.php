@@ -14,25 +14,25 @@
             </div>
             <div class="my-4">
                 <label for="adress" class="">
-                    <p>adresse</p>
-                    <input type="text" name="adress">
+                    <p class="font-semibold capitalize">adresse</p>
+                    <input type="text" name="adress" class="border-2 border-gray-700 rounded-md w-1/5 p-1">
                 </label>
             </div>
             <div class="my-4">
                 <label for="story">
-                    <p>histoire</p>
-                    <input type="text" name="story">
+                    <p class="font-semibold capitalize">histoire</p>
+                    <input type="text" name="story" class="border-2 border-gray-700 rounded-md w-1/5 p-1">
                 </label>
             </div>
             <div class="my-4">
                 <label for="pic_path">
-                    <p>photo du malade</p>
-                    <input type="text" name="pic_path">
+                    <p class="font-semibold capitalize">photo du malade</p>
+                    <input type="text" name="pic_path" class="border-2 border-gray-700 rounded-md w-1/5 p-1">
                 </label>
             </div>
             <div class="my-4">
                 <label for="etat">
-                    <p>etat</p>
+                    <p class="font-semibold capitalize">etat</p>
                     <select>
                         <option value="">grave</option>
                     </select>
@@ -40,38 +40,38 @@
             </div>
             <div class="my-4">
                 <label for="ecocash_name">
-                    <p>nom ecocash *</p>
-                    <input type="text" name="ecocash_name">
+                    <p class="font-semibold capitalize">nom ecocash *</p>
+                    <input type="text" name="ecocash_name" class="border-2 border-gray-700 rounded-md w-1/5 p-1">
                 </label>
             </div>
             <div class="my-4">
                 <label for="ecocash_number">
-                    <p>numero ecocash *</p>
-                    <input type="number" name="ecocash_number">
+                    <p class="font-semibold capitalize">numero ecocash *</p>
+                    <input type="number" name="ecocash_number" class="border-2 border-gray-700 rounded-md w-1/5 p-1">
                 </label>
             </div>
             <div class="my-4">
                 <label for="lumicash_name">
-                    <p>nom lumicash *</p>
-                    <input type="text" name="lumicash_name">
+                    <p class="font-semibold capitalize">nom lumicash *</p>
+                    <input type="text" name="lumicash_name" class="border-2 border-gray-700 rounded-md w-1/5 p-1">
                 </label>
             </div>
             <div class="my-4">
                 <label for="lumicash_number">
-                    <p>numero lumicash *</p>
-                    <input type="number" name="lumicash_number">
+                    <p class="font-semibold capitalize">numero lumicash *</p>
+                    <input type="number" name="lumicash_number" class="border-2 border-gray-700 rounded-md w-1/5 p-1">
                 </label>
             </div>
             <div class="my-4">
                 <label for="bank_name">
-                    <p>nom de la bank *</p>
-                    <input type="text" name="bank_name">
+                    <p class="font-semibold capitalize">nom de la bank *</p>
+                    <input type="text" name="bank_name" class="border-2 border-gray-700 rounded-md w-1/5 p-1">
                 </label>
             </div>
             <div class="my-4">
                 <label for="bank_number">
-                    <p>numero du compte *</p>
-                    <input type="number" name="bank_number">
+                    <p class="font-semibold capitalize">numero du compte *</p>
+                    <input type="number" name="bank_number" class="border-2 border-gray-700 rounded-md w-1/5 p-1">
                 </label>
             </div>
         </form>
