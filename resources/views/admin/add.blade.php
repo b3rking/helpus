@@ -21,7 +21,7 @@
             <div class="my-4">
                 <label for="story">
                     <p class="font-semibold capitalize">histoire</p>
-                    <input type="text" name="story" class="border-2 border-gray-700 rounded-md w-1/5 p-1">
+                    <textarea name="story" class="border-2 border-gray-700 rounded-md w-1/5 p-1"></textarea>
                 </label>
             </div>
             <div class="my-4">
@@ -34,7 +34,9 @@
                 <label for="etat">
                     <p class="font-semibold capitalize">etat</p>
                     <select>
-                        <option value="">grave</option>
+                        @foreach ($etats as $et)
+                            <option value="">{{ $et->name }}</option>
+                        @endforeach
                     </select>
                 </label>
             </div>

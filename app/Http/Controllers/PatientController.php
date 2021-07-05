@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Patient;
 use Illuminate\Http\Request;
+use App\Models\Etat;
+
 
 class PatientController extends Controller
 {
@@ -25,7 +27,8 @@ class PatientController extends Controller
      */
     public function create(Request $request)
     {
-        return view('admin.add')->with('user', $request->user());
+        return view('admin.add')->with('user', $request->user())
+                                ->with('etats', Etat::all());
     }
 
     /**
