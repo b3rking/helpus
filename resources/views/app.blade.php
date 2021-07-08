@@ -31,7 +31,8 @@
     <meta name="theme-color" content="#047857">
     <script src="https://kit.fontawesome.com/29e3c799c5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <script src="https://cdn.ckeditor.com/ckeditor5/28.0.0/inline/ckeditor.js"></script>
+{{--     <script src="https://cdn.ckeditor.com/ckeditor5/28.0.0/inline/ckeditor.js"></script>
+ --}}    <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/balloon/ckeditor.js"></script>
 </head>
 <body class="text-gray-700">
     <header>
@@ -74,7 +75,7 @@
         <p class="text-center">Developé avec <i class="fas fa-heart text-red-600 animate-bounce"></i> par <a href="https://github.com/b3rking" target="_blank" class="text-blue-900">b3rking</a> <span class="year"></span></p>
     </div>
     <script>
-        InlineEditor
+        BalloonEditor
             .create( document.querySelector( '#editor' ) )
             .catch( error => {
                 console.error( error );

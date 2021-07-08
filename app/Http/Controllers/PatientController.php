@@ -39,7 +39,8 @@ class PatientController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Patient::create($request->all());
+        return redirect()->route('dashboard');
     }
 
     /**
