@@ -25,7 +25,10 @@
                 </label>
             </div>
             
-            <textarea name="story" id="editor" class="border-2 border-gray-700 rounded-md w-1/5 p-1">some...</textarea>
+            <div>
+                <p class="font-semibold capitalize">histoire</p>
+                <textarea id="story" name="story" cols="30" rows="10"></textarea>
+            </div>
             
             <div class="my-4">
                 <label for="pic_path">
@@ -34,14 +37,12 @@
                 </label>
             </div>
             <div class="my-4">
-                <label for="etat">
-                    <p class="font-semibold capitalize">etat</p>
-                    <select>
-                        @foreach ($etats as $et)
-                            <option value="{{ $et->name }}">{{ $et->name }}</option>
-                        @endforeach
-                    </select>
-                </label>
+                <p class="font-semibold capitalize">etat</p>
+                <select name="etat_id">
+                    @foreach ($etats as $et)
+                    <option value="{{ $et->name }}">{{ $et->name }}</option>
+                    @endforeach
+                </select>
             </div>
             <div class="my-4">
                 <label for="ecocash_name">
