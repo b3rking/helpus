@@ -12,7 +12,10 @@
         </div>
         <div class="h-auto w-11/12 main">
             <h2 class="text-lg font-bold capitalize">Tous les malades</h2>
-            <div class="h-screen w-screen">
+            <div class="h-auto w-2/3 mx-auto">
+                @if (count($patients) <= 0)
+            aucun patient present ici!
+                @else
                 <table class="table-auto mx-auto">
                     <thead>
                         <th>nom & prenom</th>
@@ -20,23 +23,17 @@
                         <th>tel</th>
                         <th>actions</th>
                     </thead>
+
                     <tbody>
+                            @foreach($patients as $pt)
                         <tr>
-                            <td class="px-6">ISHIMWE Eschyle Bersy</td>
-                            <td class="px-6">kanyosha, 8av n°45</td>
-                            <td class="px-6">78569321</td>
+                            <td class="px-6">{{ $pt->fullname }}</td>
+                            <td class="px-6">{{ $pt->adress }}</td>
+                            <td class="px-6">{{ $pt->tel}}</td>
                             <td class="px-6"><a href="">del</a><a href="">edit</a></td>
                         </tr>
-                        <tr>
-                            <td>ISHIMWE Eschyle Bersy</td>
-                            <td>kanyosha, 8av n°45</td>
-                            <td>78569321</td>
-                        </tr>
-                        <tr>
-                            <td>ISHIMWE Eschyle Bersy</td>
-                            <td>kanyosha, 8av n°45</td>
-                            <td>78569321</td>
-                        </tr>
+                            @endforeach
+                        @endif
                     </tbody>
                 </table>
             </div>
