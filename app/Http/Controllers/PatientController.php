@@ -39,7 +39,13 @@ class PatientController extends Controller
      */
     public function store(Request $request)
     {
-        Patient::create($request->all());
+        $data = $request->all();
+
+        $etat = Etat::where('name', $data['etat_id'])->get();
+
+        $data['etat_id'] = $etat[0]['id'];
+
+        Patient::create($data);
         return redirect()->route('dashboard');
     }
 
