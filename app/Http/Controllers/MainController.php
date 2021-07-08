@@ -27,7 +27,8 @@ class MainController extends Controller
     }
 
     public function dashboard(Request $request) {
-        return view('admin.dashboard')->with('user', $request->user());
+        return view('admin.dashboard')->with('user', $request->user())
+                                    ->with('patients', Patient::orderBy('created_at', 'desc')->get());
     }
 
     public function create(Request $request) {
