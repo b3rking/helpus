@@ -10,7 +10,7 @@ class Patient extends Model
     use HasFactory;
 
     protected $fillable = [
-        'nom&prenom', 'adress', 'tel', 'story', 'etat_id', 'ecocash_name', 'ecocash_number', 'lumicash_name',
+        'fullname', 'adress', 'tel', 'story', 'etat_id', 'ecocash_name', 'ecocash_number', 'lumicash_name',
         'lumicash_number', 'bank_name', 'bank_number', 'pic_path'
     ];
 
