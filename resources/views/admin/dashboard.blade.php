@@ -26,12 +26,12 @@
 
                     <tbody>
                             @foreach($patients as $pt)
-                        <tr>
-                            <td class="px-6">{{ $pt->fullname }}</td>
-                            <td class="px-6">{{ $pt->adress }}</td>
-                            <td class="px-6">{{ $pt->tel}}</td>
-                            <td class="px-6"><a href="">del</a><a href="">edit</a></td>
-                        </tr>
+                                <tr>
+                                    <td class="px-6">{{ $pt->fullname }}</td>
+                                    <td class="px-6">{{ $pt->adress }}</td>
+                                    <td class="px-6">{{ $pt->tel}}</td>
+                                    <td class="px-6"><a href="">del</a><a href="">edit</a></td>
+                                </tr>
                             @endforeach
                         @endif
                     </tbody>

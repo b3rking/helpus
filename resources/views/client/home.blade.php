@@ -6,7 +6,7 @@
         no patient yet!
     @else
         @foreach($patients as $pt)
-            {{ $pt }}
+            {{ $pt->fullname }}
         @endforeach
     @endif
 @endsection
