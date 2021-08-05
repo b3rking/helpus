@@ -8,10 +8,7 @@ use Illuminate\Http\Request;
 class MainController extends Controller
 {
 
-    /**
-     *
-     * home page function!
-     */
+    
     public function index(Request $request) {
         return view('client.home')
                 ->with('user', $request->user())
