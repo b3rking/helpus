@@ -6,7 +6,7 @@
         no patient yet!
     @else
         @foreach($patients as $pt)
-            {{ $pt->fullname }}
+            <img src="{{ $pt->pic_path }}" alt="{{ $pt->fullname }} picture at" >
         @endforeach
     @endif
 @endsection
