@@ -8,9 +8,9 @@
         @foreach($patients as $pt)
             <div class="p-2 flex flex-row">
                 <img src="./images/lo.jpg" alt="photo du malade" class="w-24">
-                <div class="flex flex-col items-center justify-center">
+                <div class="pl-2 flex flex-col justify-center items-start">
                     <h2 class="capitalize text-lg font-semibold text-left ">{{ $pt->fullname }}</h2>
-                    <p class="w-11/12 p-2">
+                    <p class="w-11/12 ">
                         {!! $pt->story !!}
                         <a href="{{ route("patient.show", $pt->id) }}" class="bg-green-500 px-2 py-1 rounded-md ">plus de detail</a>
                     </p>
