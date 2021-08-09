@@ -8,6 +8,12 @@
         @foreach($patients as $pt)
             <div class="p-4">
                 <img src="./images/lo.jpg" alt="photo du malade" class="w-32">
+                <div>
+                    <h2>{{ $pt->fullname }}</h2>
+                    <p>
+                        {!! $pt->story !!}
+                    </p>
+                </div>
             </div>
         @endforeach
     @endif
