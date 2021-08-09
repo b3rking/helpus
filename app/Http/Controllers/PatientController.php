@@ -57,7 +57,7 @@ class PatientController extends Controller
      */
     public function show(Patient $patient)
     {
-        //
+        return view('detail')->with('patient', $patient);
     }
 
     /**
@@ -91,6 +91,6 @@ class PatientController extends Controller
      */
     public function destroy(Patient $patient)
     {
-        $patient::destroy();
+        $patient::destroy($patient);
     }
 }
