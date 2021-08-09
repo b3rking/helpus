@@ -3,10 +3,16 @@
 @section('content')
     
     @if(count($patients) <= 0)
-        no patient yet!
+        <p class="pl-4 capitalize text-lg">Aucun malade pour l'instant...</p>
     @else
         @foreach($patients as $pt)
-            <img src="{{ $pt->pic_path }}" alt="{{ $pt->fullname }} picture at" >
+
+            <div>
+                
+            </div>
+
+
+            <img src="{{ $pt->pic_adress }}" alt="{{ $pt->fullname }} picture at" >
         @endforeach
     @endif
 @endsection
