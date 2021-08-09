@@ -55,9 +55,10 @@ class PatientController extends Controller
      * @param  \App\Models\Patient  $patient
      * @return \Illuminate\Http\Response
      */
-    public function show(Patient $patient)
+    public function show(Patient $patient, Request $request)
     {
-        return view('client.detail')->with('patient', $patient);
+        return view('client.detail')->with('patient', $patient)
+                                    ->with('user', $request->user());
     }
 
     /**
