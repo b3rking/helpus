@@ -57,7 +57,7 @@ class PatientController extends Controller
      */
     public function show(Patient $patient)
     {
-        return view('detail')->with('patient', $patient);
+        return view('client.detail')->with('patient', $patient);
     }
 
     /**
