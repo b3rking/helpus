@@ -16,6 +16,10 @@ Route::get('/attempt', ['App\Http\Controllers\AuthController', 'authenticate']);
 
 Route::get('/logout', ['App\Http\Controllers\AuthController', 'logout'])->name('logout');
 
+Route::get('/detail', function() {
+    return view('client.detail');
+})->name('detail');
+
 //// route to create admin!
 
 Route::get('/add_user', ['App\Http\Controllers\MainController', 'create'])->name('create');
