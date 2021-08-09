@@ -12,7 +12,7 @@
                     <h2 class="capitalize text-lg font-semibold text-left ">{{ $pt->fullname }}</h2>
                     <p class="w-11/12 p-2">
                         {!! $pt->story !!}
-                        <a href="{{ route("detail") }}" class="bg-green-500 px-2 py-1 rounded-md ">plus de detail</a>
+                        <a href="{{ route("patient.show", $pt->id) }}" class="bg-green-500 px-2 py-1 rounded-md ">plus de detail</a>
                     </p>
                 </div>
             </div>
