@@ -33,7 +33,7 @@
             <div class="my-4">
                 <label for="pic_path">
                     <p class="font-semibold capitalize">photo du malade</p>
-                    <input type="text" name="pic_path" class="border-2 border-gray-700 rounded-md w-1/5 p-1">
+                    <input type="file" name="pic_path" class="border-2 border-gray-700 rounded-md w-1/5 p-1">
                 </label>
             </div>
             <div class="my-4">
