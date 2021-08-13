@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Patient;
 use Illuminate\Http\Request;
 use App\Models\Etat;
-
+use Illuminate\Support\Facades\Storage;
 
 class PatientController extends Controller
 {
@@ -42,6 +42,8 @@ class PatientController extends Controller
         $data = $request->all();
 
         $etat = Etat::where('name', $data['etat_id'])->get();
+
+        $data['pic_path'] = $request->file('pic_path')->store('avatars');
 
         $data['etat_id'] = $etat[0]['id'];
 
